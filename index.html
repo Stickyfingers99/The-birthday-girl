@@ -1,0 +1,200 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#030008">
+    <title>For Fine Wine 💜</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            min-height: 100%;
+            background: #030008;
+            color: #fff;
+        }
+
+        body {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <video
+        id="space-background"
+        muted
+        loop
+        playsinline
+        preload="none"
+        aria-hidden="true"
+    >
+        <source src="/space-wallpaper.mp4" type="video/mp4">
+    </video>
+
+    <audio id="birthday-song" preload="auto">
+        <source src="/happy-birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <main>
+        <section id="experience">
+            <p class="intro-text bounce">Heyyy Finee Wine 🍷💕</p>
+
+            <p class="roll-text hidden">
+                <span>I</span>
+                <span>made</span>
+                <span>something</span>
+                <span>little</span>
+                <span>for</span>
+                <span>your</span>
+                <span>day...</span>
+            </p>
+
+            <p class="ready-text hidden">Are you ready?</p>
+
+            <button type="button" class="please hidden">
+                Yes please 💜
+            </button>
+
+            <p id="countdown" class="hidden" aria-live="polite">10</p>
+
+            <div id="letter-rain" class="hidden" aria-hidden="true"></div>
+
+            <div id="birthday-message" class="hidden">
+                <h1 id="birthday-title"></h1>
+            </div>
+
+            <div id="balloon-rain" class="hidden" aria-hidden="true"></div>
+        </section>
+
+        <section id="scrapbook" class="hidden">
+            <p class="section-kicker">A little something, just for you</p>
+            <h2 class="scrapbook-heading">For my Fine Wine 💜</h2>
+
+            <div class="heart-layout">
+                <div class="photo-heart" aria-label="Photos arranged in a heart shape">
+                    <figure class="photo-frame photo-one">
+                        <img src="/photos1.jpeg" alt="A favourite memory">
+                    </figure>
+
+                    <figure class="photo-frame photo-two">
+                        <img src="/photos2.jpeg" alt="A lovely memory">
+                    </figure>
+
+                    <figure class="photo-frame photo-three">
+                        <img src="/photos3.jpeg" alt="A special moment">
+                    </figure>
+
+                    <figure class="photo-frame photo-four">
+                        <img src="/photos4.jpeg" alt="A happy memory">
+                    </figure>
+
+                    <figure class="photo-frame photo-five">
+                        <img src="/photos5.jpeg" alt="Another favourite memory">
+                    </figure>
+
+                    <figure class="photo-frame photo-six">
+                        <img src="/photos6.jpeg" alt="A memory worth keeping">
+                    </figure>
+
+                    <div class="heart-glow" aria-hidden="true">♥</div>
+                </div>
+
+                <article class="love-letter">
+                    <div class="letter-heart" aria-hidden="true">♡</div>
+                    <p class="letter-small">To someone who means so much</p>
+                    <h3>Happy 22nd Birthday 💗</h3>
+
+                    <div class="letter-copy">
+                        <p>Happy birthday, Fine Wine. 💜</p>
+
+                        <p>
+                            I'm genuinely grateful that you're part of my life.
+                            There's something special about you, in the way you
+                            carry yourself, the way you make people feel, and
+                            the little things that make you uniquely you.
+                        </p>
+
+                        <p>
+                            I hope this new chapter brings you the happiness you
+                            deserve, the courage to chase the things you want,
+                            people who love you properly, and countless reasons
+                            to smile. I hope you keep discovering beautiful
+                            things about yourself and never forget how much
+                            you have to offer.
+                        </p>
+
+                        <p>
+                            Thank you for being you and for the memories we've
+                            made. I'm wishing you a year full of growth, love,
+                            laughter, answered prayers, and moments that make
+                            life feel beautiful.
+                        </p>
+
+                        <p>
+                            You deserve to be celebrated, today and beyond.
+                            Happy 22nd birthday, my Fine Wine. 💕
+                        </p>
+                    </div>
+
+                    <p class="letter-signoff">Made with love, just for you ♡</p>
+                </article>
+            </div>
+
+            <button type="button" id="open-book" class="primary-button">
+                22 things I like about you ♡
+            </button>
+        </section>
+
+        <section id="flipbook-section" class="hidden">
+            <p class="section-kicker">Twenty-two reasons and counting</p>
+            <h2 class="scrapbook-heading">22 Things I Like About You</h2>
+
+            <div class="book" id="book">
+                <div class="book-cover" id="book-cover">
+                    <span class="cover-heart" aria-hidden="true">♥</span>
+                    <p>A little book about</p>
+                    <h3>YOU</h3>
+                    <span class="cover-subtitle">22 things I adore ♡</span>
+
+                    <button type="button" id="start-book" class="primary-button">
+                        Open the book
+                    </button>
+                </div>
+
+                <article class="book-page hidden" id="book-page" aria-live="polite">
+                    <p class="page-number" id="page-number">01 / 22</p>
+                    <div class="page-heart" aria-hidden="true">♡</div>
+                    <p class="page-label">One thing I like about you</p>
+                    <h3 id="page-heading">Your smile</h3>
+                    <p id="page-description" class="page-description"></p>
+                    <div class="page-decoration" aria-hidden="true">✦ · ♡ · ✦</div>
+                </article>
+            </div>
+
+            <div class="book-controls hidden" id="book-controls">
+                <button type="button" id="previous-page" class="secondary-button">
+                    ← Previous
+                </button>
+
+                <span id="page-counter">1 of 22</span>
+
+                <button type="button" id="next-page" class="primary-button">
+                    Next page →
+                </button>
+            </div>
+
+            <p id="book-ending" class="book-ending hidden">
+                And that's only 22 of the many things. Happy birthday, Fine Wine. 💜
+            </p>
+
+            <button type="button" id="back-to-letter" class="secondary-button">
+                Back to your letter
+            </button>
+        </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
