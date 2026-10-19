@@ -1,7 +1,7 @@
 
 'use strict';
 
-import './style.css';
+import '/style.css';
 
 // Reveal the page after the stylesheet has loaded.
 document.body.style.visibility = 'visible';
